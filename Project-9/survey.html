@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Extreme Honeymoons : Survey</title>
 
 <link rel="stylesheet" href="mystyle.css">
-<link rel="php" href="FormToEmail.php">
 <script type="text/javascript" src="myscripts.js"></script>
 </head>
 
@@ -14,7 +13,7 @@
     <div id="container">
         <div class="prints">
         <header>
-            <a href="" onmouseover="document.getElementById('logo').src='Images/Logo.jpg';"
+            <a href="index.html" onmouseover="document.getElementById('logo').src='Images/Logo.jpg';"
             onmouseout="document.getElementById('logo').src='Images/Logo1.jpg';">
             <img id="logo" src="Images/Logo.jpg" alt="logo"></a>
             <img src="Images/Banner.png" alt="Banner" width="400px">
@@ -31,7 +30,10 @@
         </header>
         </div>
         <section>
-           <FORM method="post">
+            <h1>Customer Survey Info</h1>
+            <p id="info">This is where customers will write a review and show how they felt about their experience with extreme honeymoons! Fill out the document if you had gone on an excurison with us to show how you felt about it and help us improve! </p>
+           <FORM action="FormToEmail.php" method="post" target="_blank">
+            <br>
             <fieldset>
                 <ledgend>Customer Survey</ledgend>
                 <br>
@@ -41,52 +43,67 @@
                     <li>
                         <label for="name">Name:</label>
                         <br>
-                        <input id="name" class="text" type="text">
+                        <input id="name" class="text" type="text" name="name">
                     </li>
                     <br>
                     <li>
                         <label for="email">Email:</label>
                         <br>
-                        <input id="email" class="text" type="text">
+                        <input id="email" class="text" type="text" name="email">
                     </li>
                     <br>
                     <li>
                         <label for="phone">Phone Number:</label>
                         <br>
-                        <input id="phone" class="text" type="text">
+                        <input id="phone" class="text" type="text" name="phone">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="when">When Was Your Excursion:</label>
+                        <br>
+                        <input id="when" class="text" type="text" name="when">
                     </li>
                     
                     <br>
                     <li>
                         <label for="TripDetais">Other comments:</label>
                         <br>
-                        <textarea id="TripDetais" class="text"></textarea>
+                        <textarea id="TripDetais" class="text" name="TripDetais"></textarea>
                     </li>
                     <br>
                     <li>
                         <label for="WhatExcursion">What Excursion:</label>
-                        <select name="excursion" id="excursion">
+                        <select name="excursion" id="excursion" name="excurison">
                             <option></option>
-                            <option>Skiing</option>
+                            <option class="color">Skiing</option>
                             <option>Paragliding</option>
-                            <option>Biking</option>
+                            <option class="color">Biking</option>
                             <option>Hunting</option>
-                            <option>Sailing</option>
+                            <option class="color">Sailing</option>
                         </select>
-                    
-                    </li>
-                    <legend>How to contact you:</legend>
-                    <li>
-                        <label for="email1">Email</label>
-                        
-                        <input id="email1" class="checkbox" type="checkbox">
-                    </li>
-                    <li>
-                        <label for="phone1">Phone</label>
-
-                        <input id="phone1" class="checkbox" type="checkbox">
+                    <br>
                     </li>
                     </ul>
+                    <fieldset>
+                    <legend>How to contact you:</legend>
+                    <ul>
+                    <li>
+                        <label for="email1" class="script">Email</label>
+                        
+                        <input id="email1" class="checkbox" name="emailCon" type="checkbox">
+                    </li>
+                    <li>
+                        <label for="phone1" class="script">Phone</label>
+
+                        <input id="phone1" class="checkbox" type="checkbox" name="phoneCon">
+                    </li>
+                    <li>
+                        <label for="other">Other &nbsp;<span>(Please Specify)</span></label>
+                        <br>
+                        <textarea id="others" class="text" name="others"></textarea>
+                    </li>
+                    </ul>
+                </fieldset>
                     </fieldset>
                     
                     <fieldset>
@@ -124,6 +141,7 @@
             <input type="submit" name="submit" value="Submit">
             <input type="reset" name="reset" value="Reset">
             </fieldset>
+            <br>
            </FORM>
         </section>
         <footer>

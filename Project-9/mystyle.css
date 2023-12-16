@@ -107,3 +107,29 @@
         background-color: rgb(255, 198, 198);
         margin-right:auto;
     }
+    .radio{
+        background-color: rgb(255, 198, 198);
+    }
+    input[type=radio].radio { 
+        accent-color: rgb(180, 0, 120); 
+    }
+    input[type="checkbox"] {
+        accent-color: rgb(180, 0, 120); 
+        }
+    textarea{
+        background-color: rgb(255, 186, 186);
+    }
+    option{
+        background-color: rgb(255, 184, 190);
+    }
+    select{
+        background-color: rgb(225, 186, 186);
+    }
+    #info, legend{
+        text-align: center;
+        font-family:cursive
+    }
+    .color{
+        color: rgb(225, 186, 186);
+        background-color: rgb(0, 0, 0);
+    }
