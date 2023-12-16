@@ -31,10 +31,98 @@
         </header>
         </div>
         <section>
-           <FORM>
+           <FORM method="post">
             <fieldset>
                 <ledgend>Customer Survey</ledgend>
-                <input for=""
+                <br>
+                <fieldset>
+                    <legend>Contact Informaiton:</legend>
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <br>
+                        <input id="name" class="text" type="text">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="email">Email:</label>
+                        <br>
+                        <input id="email" class="text" type="text">
+                    </li>
+                    <br>
+                    <li>
+                        <label for="phone">Phone Number:</label>
+                        <br>
+                        <input id="phone" class="text" type="text">
+                    </li>
+                    
+                    <br>
+                    <li>
+                        <label for="TripDetais">Other comments:</label>
+                        <br>
+                        <textarea id="TripDetais" class="text"></textarea>
+                    </li>
+                    <br>
+                    <li>
+                        <label for="WhatExcursion">What Excursion:</label>
+                        <select name="excursion" id="excursion">
+                            <option></option>
+                            <option>Skiing</option>
+                            <option>Paragliding</option>
+                            <option>Biking</option>
+                            <option>Hunting</option>
+                            <option>Sailing</option>
+                        </select>
+                    
+                    </li>
+                    <legend>How to contact you:</legend>
+                    <li>
+                        <label for="email1">Email</label>
+                        
+                        <input id="email1" class="checkbox" type="checkbox">
+                    </li>
+                    <li>
+                        <label for="phone1">Phone</label>
+
+                        <input id="phone1" class="checkbox" type="checkbox">
+                    </li>
+                    </ul>
+                    </fieldset>
+                    
+                    <fieldset>
+                        
+                    <legend>What would you rate your excursion out of 5:</legend>
+                    <ul>
+                        <li>
+                            <label for="1">1</label>
+                        
+                            <input id="1" class="radio" type="radio" value="1" name="radio">
+                        </li>
+                        <li>
+                        <label for="2">2</label>
+                        
+                            <input id="1" class="radio" type="radio" value="2" name="radio">
+                        </li>
+                        <li>
+                            <label for="3">3</label>
+                        
+                            <input id="3" class="radio" type="radio" value="3" name="radio">
+                        </li>
+                        <li>
+                            <label for="4">4</label>
+
+                            <input id="4" class="radio" type="radio" value="4" name="radio">
+                        </li>
+                        <li>
+                            <label for="5">5</label>
+
+                            <input id="5" class="radio" type="radio" value="5" name="radio">
+                        </li>
+                    </ul>
+            
+            </fieldset>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
             </fieldset>
            </FORM>
         </section>
